@@ -1,0 +1,27 @@
+{
+  "name": "callback-registrationkoder",
+  "version": "0.0.1",
+  "description": "Using the method to define functions that use callbacks, create the registration process of a koder that goes through these 4 stages: Call, Interview, Section, First class",
+  "main": "src/index.js",
+  "scripts": {
+    "registration": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victortorres-dev/callback-registrationKoder.git"
+  },
+  "keywords": [
+    "callack",
+    "setTimeout",
+    "functions"
+  ],
+  "author": "victortorres-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victortorres-dev/callback-registrationKoder/issues"
+  },
+  "homepage": "https://github.com/victortorres-dev/callback-registrationKoder#readme",
+  "devDependencies": {
+    "standard": "^14.3.3"
+  }
+}
