@@ -66,15 +66,15 @@ llamar(koder, (errorDeContacto, koderContactado) => {
   errorDeContacto
     ? console.log('Koder no contactado: ', errorDeContacto)
     : console.log('Koder contactado: ', koderContactado)
-  entrevistar(koder, (errorDeEntrevista, koderEntrevistado) => {
+  entrevistar(koderContactado, (errorDeEntrevista, koderEntrevistado) => {
     errorDeEntrevista
       ? console.log('Koder no entrevistado: ', errorDeEntrevista)
       : console.log('Koder entrevistado: ', koderEntrevistado)
-    reservar(koder, (errorDeApartado, lugarReservado) => {
+    reservar(koderEntrevistado, (errorDeApartado, lugarReservado) => {
       errorDeApartado
         ? console.log('Koder no reservó lugar: ', errorDeApartado)
         : console.log('Lugar reservado a koder: ', lugarReservado)
-      asistirAclase(koder, (errorDeAsistencia, claseTomada) => {
+      asistirAclase(lugarReservado, (errorDeAsistencia, claseTomada) => {
         errorDeAsistencia
           ? console.log('Koder no asistió a su primer clase: ', errorDeAsistencia)
           : console.log('Bienvenido a tu primer clase Koder!!!: ', claseTomada)

@@ -4,7 +4,9 @@
   "description": "Using the method to define functions that use callbacks, create the registration process of a koder that goes through these 4 stages: Call, Interview, Section, First class",
   "main": "src/index.js",
   "scripts": {
-    "registration": "node src/index.js"
+    "registration": "node src/index.js",
+    "promises": "node src/promises.js",
+    "asaw": "node src/async-await.js"
   },
   "repository": {
     "type": "git",
